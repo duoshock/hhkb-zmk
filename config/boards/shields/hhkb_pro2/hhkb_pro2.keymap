@@ -7,14 +7,24 @@
     tapping-term-ms = <150>;
 };
 
-ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
-
 #define DEFAULT 0
 #define NAV 1
 #define FN 2
 #define BT 3
 
 / {
+    macros {
+        zed_em_kay: zed_em_kay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp Z &kp M &kp K>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
+    };
+    
     keymap {
         compatible = "zmk,keymap";
 
