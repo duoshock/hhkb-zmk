@@ -10,7 +10,7 @@
     tapping-term-ms = <150>;
 };
 
-ZMK_UNICODE_SINGLE(pound_sign, N0, N1, N6, N3)
+ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
 
 #define DEFAULT 0
 #define NAV 1
@@ -43,7 +43,7 @@ ZMK_UNICODE_SINGLE(pound_sign, N0, N1, N6, N3)
 
         fn_layer {
             bindings = <
-                &trans &trans &trans &trans &pound_sign &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp DEL
+                &trans &trans &trans &trans &euro_sign &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp DEL
                 &trans &trans &trans &trans &trans &trans &trans &trans &kp INS &trans &kp PSCRN &trans &trans &trans
                 &trans &trans &kp SLCK &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp KP_ENTER
                 &trans  &trans &trans &kp CAPS &trans &trans &kp KP_NLCK &trans &trans &trans &trans &trans &trans
