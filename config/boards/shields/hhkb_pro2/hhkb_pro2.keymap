@@ -14,17 +14,17 @@
 
 / {
     macros {
-        zed_em_kay: zed_em_kay {
+        pound_sign: pound_sign {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp Z &kp M &kp K>
-                , <&macro_release &kp LSHFT>
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp N0 &kp N1 &kp N6 &kp N3>
+                , <&macro_release &kp LALT>
                 ;
         };
     };
-    
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -50,7 +50,7 @@
 
         fn_layer {
             bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp DEL
+                &trans &trans &trans &trans &pound_sign &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp DEL
                 &trans &trans &trans &trans &trans &trans &trans &trans &kp INS &trans &kp PSCRN &trans &trans &trans
                 &trans &trans &kp SLCK &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp KP_ENTER
                 &trans  &trans &trans &kp CAPS &trans &trans &kp KP_NLCK &trans &trans &trans &trans &trans &trans
