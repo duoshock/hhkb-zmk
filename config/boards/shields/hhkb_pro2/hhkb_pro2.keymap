@@ -10,7 +10,6 @@
 #define DEFAULT 0
 #define NAV 1
 #define FN 2
-#define BT 3
 
 / {
     keymap {
@@ -22,17 +21,17 @@
                 &kp TAB &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp LBKT &kp RBKT &kp BSLH
                 &kp BSPC &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI &kp SQT &kp ENTER
                 &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH &mt RSHIFT UP &lt FN DOWN
-                &kp LCTRL &kp LALT                 &lt NAV SPACE                   &kp &mt LALT LEFT &mt LCTRL RIGHT
+                        &kp LCTRL &kp LALT                 &lt NAV SPACE                   &kp &mt LALT LEFT &mt LCTRL RIGHT
             >;
         };
 
         nav_layer {
             bindings = <
                 &kp HOME &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &trans &kp DEL
-                &kp END   &kp PG_UP &kp UP &kp PG_DN &trans &trans &trans &trans &kp PSCRN &kp SLCK &kp PAUSE_BREAK &kp UP &trans &kp BSPC
-                &kp ENTER &kp LEFT &kp DOWN &kp RIGHT &kp C_EJECT &trans &kp KP_MULTIPLY &kp KP_DIVIDE &kp HOME &kp PG_UP &kp LEFT &kp RIGHT &trans
-                &trans &trans &trans &trans &trans &trans &kp KP_PLUS &kp KP_MINUS &kp END &kp PG_DN &kp DOWN &trans &trans
-                &trans &trans               &trans                    &kp C_VOL_DN &kp C_VOL_UP
+                &kp END   &kp PG_UP &kp UP &kp PG_DN &kp LBKT &kp RBKT &trans &trans &trans &trans &trans &trans &trans &trans
+                &kp ENTER   &kp LEFT &kp DOWN &kp RIGHT &kp &trans &trans &trans &trans &trans &trans &trans &trans     &trans
+                &trans          &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans            &trans
+                        &trans &trans               &trans                    &kp C_VOL_DN &kp C_VOL_UP
             >;
         };
 
@@ -40,19 +39,9 @@
             bindings = <
                 &kp K_POWER &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp INS &kp DEL
                 &kp CAPS &trans &trans &trans &sys_reset &trans &trans &bootloader &kp PSCRN &kp SLCK &kp PAUSE_BREAK &kp UP &trans &kp BSPC
-                &mo BT &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &kp C_EJECT &trans &kp KP_MULTIPLY &kp KP_DIVIDE &kp HOME &kp PG_UP &kp LEFT &kp RIGHT &trans
+                &trans &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &kp C_EJECT &trans &kp KP_MULTIPLY &kp KP_DIVIDE &kp HOME &kp PG_UP &kp LEFT &kp RIGHT &trans
                 &trans &trans &trans &trans &trans &trans &kp KP_PLUS &kp KP_MINUS &kp END &kp PG_DN &kp DOWN &trans &trans
-                &trans &trans               &trans                    &trans &trans
-            >;
-        };
-
-        bt_layer {
-            bindings =<
-                &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &none &none &none &none &none &none &none &none
-                &out OUT_TOG &bt BT_CLR &none &none &none &none &none &none &none &none &none &none &none &none
-                &none &none &none &none &none &none &none &none &none &none &none &none &none
-                &none &none &none &none &none &none &none &none &none &none &none &none &none
-                &none &none             &none                   &none &none
+                        &trans &trans               &trans                    &trans &trans
             >;
         };
     };
