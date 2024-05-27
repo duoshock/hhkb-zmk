@@ -4,8 +4,10 @@
 #include <dt-bindings/zmk/outputs.h>
 
 &lt {
-    tapping-term-ms = <200>;
+    tapping-term-ms = <150>;
 };
+
+ZMK_UNICODE_SINGLE(pound_sign, N0, N1, N6, N3)
 
 #define DEFAULT 0
 #define NAV 1
@@ -38,7 +40,7 @@
 
         fn_layer {
             bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp DEL
+                &trans &trans &trans &trans &pound_sign &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp DEL
                 &trans &trans &trans &trans &trans &trans &trans &trans &kp INS &trans &kp PSCRN &trans &trans &trans
                 &trans &trans &kp SLCK &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp KP_ENTER
                 &trans  &trans &trans &kp CAPS &trans &trans &kp KP_NLCK &trans &trans &trans &trans &trans &trans
