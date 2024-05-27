@@ -37,10 +37,10 @@
 
         fn_layer {
             bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &sys_reset &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans  &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp DEL
+                &trans &trans &trans &trans &sys_reset &trans &trans &trans &kp INS &trans &kp PSCRN &trans &trans &trans
+                &trans &trans &kp SLCK &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp KP_ENTER
+                &trans  &trans &trans &kp CAPS &trans &trans &kp KP_NLCK &trans &trans &trans &trans &trans &trans
                         &trans &trans               &trans                    &kp C_VOL_DN &kp C_VOL_UP
             >;
         };
