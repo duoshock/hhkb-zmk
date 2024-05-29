@@ -21,7 +21,7 @@
                 <&hhkb_pro2_connector 9 GPIO_ACTIVE_HIGH>;               /* 9: STROBE */
     };
 
-        pm_wake_sensor {
+    pm_wake_sensor {
         compatible = "zmk,pm-wake-sensor";
         status = "okay";
         power-gpios = <&hhkb_pro2_connector 19 GPIO_ACTIVE_HIGH>;
