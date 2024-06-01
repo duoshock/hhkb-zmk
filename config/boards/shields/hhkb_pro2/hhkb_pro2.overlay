@@ -40,7 +40,6 @@
 
     kscan2: kscan_direct {
         compatible = "zmk,kscan-gpio-direct";
-        wakeup-source;
         input-gpios
             = <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&gpio0 29 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
@@ -54,7 +53,7 @@
         sensor-gpios = <&gpio0 9 (GPIO_ACTIVE_LOW|GPIO_PULL_DOWN)>;
     };
 
-    default_transform: keymap_transform_0 {
+    default_transform: keymap_transform {
         compatible = "zmk,matrix-transform";
         columns = <8>;
         rows = <9>;
