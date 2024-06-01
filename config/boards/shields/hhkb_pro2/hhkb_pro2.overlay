@@ -4,7 +4,7 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
+        //zmk,matrix_transform = &default_transform;
     };
 
     kscan0: kscan_composite {
@@ -20,7 +20,7 @@
         // Include the direct GPIO driver...
         direct {
             kscan = <&kscan2>;
-            row-offset = <7>; // ...and shift it to not overlap
+            row-offset = <8>; // ...and shift it to not overlap
         };
     };
 
