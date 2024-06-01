@@ -3,8 +3,25 @@
 
 / {
     chosen {
-        zmk,kscan = &kscan1;
+        zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
+    };
+
+    kscan0: kscan_composite {
+        compatible = "zmk,kscan-composite";
+        rows = <9>;
+        columns = <8>;
+
+        // Include the matrix driver
+        matrix {
+            kscan = <&kscan1>;
+        };
+
+        // Include the direct GPIO driver...
+        direct {
+            kscan = <&kscan2>;
+            row-offset = <8>; // ...and shift it to not overlap
+        };
     };
 
     kscan1: kscan_matrix {
