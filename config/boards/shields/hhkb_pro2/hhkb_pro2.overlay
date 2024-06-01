@@ -25,8 +25,8 @@
         compatible = "zmk,kscan-gpio-direct";
         wakeup-source;
         input-gpios
-            = <&hhkb_pro2_connector 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&hhkb_pro2_connector 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            = <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 29 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             ;
     };
     
