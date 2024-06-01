@@ -21,10 +21,9 @@
                 <&hhkb_pro2_connector 9 GPIO_ACTIVE_HIGH>;               /* 9: STROBE */
     };
 
-    kscan1: kscan_direct {
+    kscan1: kscan {
         compatible = "zmk,kscan-gpio-direct";
         wakeup-source;
-
         input-gpios
             = <&hhkb_pro2_connector 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&hhkb_pro2_connector 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
