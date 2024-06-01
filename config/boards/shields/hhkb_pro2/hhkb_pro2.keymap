@@ -35,6 +35,7 @@
                 &kp BSPC &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI &kp SQT &kp ENTER
                 &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH &mt RSHFT UP &lt FN DOWN
                         &kp LCTRL &kp LALT                 &lt NAV SPACE                   &mt LALT LEFT &mt LCTRL RIGHT
+                            &kp F1                      &kp F2
             >;
         };
 
@@ -45,6 +46,7 @@
                 &kp ENTER   &kp LEFT &kp DOWN &kp RIGHT &kp LA(LBKT) &kp LA(RBKT) &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans &trans
                 &trans        &kp RC(MINUS) &kp RC(EQUAL) &kp RS(SLASH) &kp EQUAL &kp MINUS &trans &trans &trans &trans &trans &trans        &trans
                         &trans &trans               &trans                    &kp C_VOL_DN &kp C_VOL_UP
+                            &kp F1                      &kp F2
             >;
         };
 
@@ -55,6 +57,7 @@
                 &trans &trans &kp SLCK &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp KP_ENTER
                 &trans  &trans &trans &kp CAPS &trans &trans &kp KP_NLCK &trans &kp KP_COMMA &kp KP_DOT &kp KP_SLASH &trans &trans
                         &trans &trans               &mo BT                    &kp C_VOL_DN &kp C_VOL_UP
+                            &kp F1                      &kp F2
             >;
         };
 
@@ -65,6 +68,7 @@
                 &none &none &none &none &none &none &none &none &none &none &none &none &none
                 &none  &none &none &none &none &none &none &none &none &none &none &none &none
                         &none &none               &none                    &none &none &none
+                        &none &none
             >;
         };
     };
