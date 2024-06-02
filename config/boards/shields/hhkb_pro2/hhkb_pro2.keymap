@@ -35,7 +35,7 @@
                 &kp BSPC &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI &kp SQT &kp ENTER
                 &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH &mt RSHFT UP &lt FN DOWN
                         &kp LCTRL &kp LALT                 &lt NAV SPACE                   &mt LALT LEFT &mt LCTRL RIGHT
-                &kp F1  &kp F2
+                &mo NAV  &mo FN
             >;
         };
 
