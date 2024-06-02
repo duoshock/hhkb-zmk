@@ -235,8 +235,8 @@ static const struct kscan_driver_api kscan_hhkb_pro2_api = {
                           NULL,                                                            \
                           &kscan_hhkb_pro2_data##inst,                                     \
                           &kscan_hhkb_pro2_config##inst,                                   \
+                          POST_KERNEL,                                                     \
                           CONFIG_APPLICATION_INIT_PRIORITY,                                \
-                          APPLICATION,                                                     \
                           &kscan_hhkb_pro2_api);
 
 DT_INST_FOREACH_STATUS_OKAY(CREATE_kscan_hhkb_pro2)
