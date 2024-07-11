@@ -1,0 +1,22 @@
+if SHIELD_HHKB_PRO2_DONGLE
+
+config ZMK_KEYBOARD_NAME
+    default "HHKB Dongle"
+
+config ZMK_SPLIT
+	default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_HHKB_PRO2_MAIN
+
+config ZMK_KEYBOARD_NAME
+    default "HHKB Main"
+
+config ZMK_SPLIT
+	default y
+
+endif
