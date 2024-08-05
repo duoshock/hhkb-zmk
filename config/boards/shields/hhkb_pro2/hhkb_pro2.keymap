@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 &lt {
-    tapping-term-ms = <140>;
+    tapping-term-ms = <180>;
 };
 
 #define DEFAULT 0
