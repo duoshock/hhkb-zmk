@@ -19,3 +19,5 @@ include:
     shield: hhkb_pro2 custom_pro2
     cmake-args: \'-DCONFIG_ZMK_KEYBOARD_NAME=\"Sho60v2\"\'
     artifact-name: hhkb_pro2_shoe60v2
+  - board: nice_nano_v2
+    shield: settings_reset
