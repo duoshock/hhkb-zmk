@@ -15,4 +15,3 @@
 include:
   - board: nice_nano_v2
     shield: hhkb_pro2 custom_pro2
-    cmake-args: '-DCONFIG_ZMK_KEYBOARD_NAME="Hello"'
