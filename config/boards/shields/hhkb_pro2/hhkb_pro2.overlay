@@ -51,7 +51,7 @@
     pm_wake_sensor {
         compatible = "zmk,pm-wake-sensor";
         status = "okay";
-        power-gpios = <&gpio0 2 GPIO_ACTIVE_HIGH>;
+        power-gpios = <&gpio0 10 GPIO_ACTIVE_HIGH>;
         sensor-gpios = <&gpio0 9 (GPIO_ACTIVE_LOW|GPIO_PULL_DOWN)>;
     };
 
