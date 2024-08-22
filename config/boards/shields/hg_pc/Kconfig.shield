@@ -1,3 +1,0 @@
-config SHIELD_HHKB_PRO2
-    def_bool $(shields_list_contains,hhkb_pro2)
-    depends on KSCAN_HHKB_PRO2
