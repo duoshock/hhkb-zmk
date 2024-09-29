@@ -5,6 +5,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
+        zmk,battery = &vbatt;
     };
 
     kscan0: kscan0 {
@@ -21,6 +22,10 @@
                 <&hhkb_pro2_connector 9 GPIO_ACTIVE_HIGH>;               /* 9: STROBE */
     };
     
+    vbatt: vbatt {
+        compatible = "zmk,battery-nrf-vddh";
+    };
+
     pm_wake_sensor {
         compatible = "zmk,pm-wake-sensor";
         status = "okay";
