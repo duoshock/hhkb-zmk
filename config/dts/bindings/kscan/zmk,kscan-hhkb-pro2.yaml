@@ -19,7 +19,7 @@ properties:
     default: 6
   adc-read-settle-us:
     type: int
-    default: 10
+    default: 5
   active-polling-interval-ms:
     type: int
     default: 3
