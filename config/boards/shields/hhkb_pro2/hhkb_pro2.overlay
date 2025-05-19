@@ -22,6 +22,13 @@
                 <&hhkb_pro2_connector 9 GPIO_ACTIVE_HIGH>;               /* 9: STROBE */
     };
 
+    pm_wake_sensor {
+        compatible = "zmk,pm-wake-sensor";
+        status = "okay";
+        power-gpios = <&gpio0 10 GPIO_ACTIVE_HIGH>;
+        sensor-gpios = <&gpio0 9 (GPIO_ACTIVE_LOW|GPIO_PULL_DOWN)>;
+    };
+
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <8>;
